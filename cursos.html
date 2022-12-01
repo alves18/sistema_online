@@ -31,8 +31,16 @@
     </nav>       
     <main class="container"> 
             <h2>Nossos cursos</h2>
+
+            <button type="button" class="btn btn-secondary mb-3" data-bs-toggle="modal" data-bs-target="#cadastro"> 
+
+                Novo curso MODAL
+              
+            </button> 
+
             <a class = "btn btn-primary mb-3" href="formulario_curso.html"><!--<img src="imagens/INFOCENA.png"/>--> Novo curso</a>
         <table class="table table-striped">
+
             <thead class="table-primary">
                 <tr>
                     <th>Nome</th>
@@ -63,7 +71,62 @@
                     </td>
                 </tr>
             </tbody>
-        </table>      
+        </table>  
+        
+        
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cadastro"> 
+
+            Cadastro
+          
+        </button>                  
+        <div class="modal fade" id="cadastro" tabindex="-1" aria-labelledby="cadastro" aria-hidden="true"> 
+            <div class="modal-dialog"> 
+          
+                <div class="modal-content"> 
+            
+                    <div class="modal-header"> 
+                        <h2 class="modal-title" id="cadastro">Cadastro</h2>             
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                         
+                    </div> 
+            
+                    <div class="modal-body"> 
+                        <form method="post">
+                            <div class="row">
+                                <div class="col">
+                                    <mb-3></mb-3>
+                                    <h2>Cadastrar Cursos</h2>
+                                    <mb-3></mb-3>             
+                                    <a class = "btn btn-primary mb-3" href="cursos.html"><!--<img src="imagens/INFOCENA.png"/>--> Voltar</a>         
+                                    <mb-3></mb-3>   
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md">   
+                                    <input type="text" id="nome" name="nome" placeholder="Nome" class="form-control" /> 
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md">       
+                                    <input type="number" id="valor" name="valor" placeholder="Valor" class="form-control valor" />
+                                </div>
+                            </div>
+                            <div>
+                                <input type="submit" value="Ok" class="btn btn-primary"/>
+                                <input type="reset" value="Limpar" class="btn btn-secondary"/>
+                            </div>              
+                        </form> 
+                    </div> 
+            
+                    <div class="modal-footer"> 
+                
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button> 
+                
+                        <button type="button" class="btn btn-primary">Salvar Alterações</button> 
+            
+                    </div>           
+              </div>           
+            </div>           
+        </div> 
     </main>
    
 </body>
